@@ -1,0 +1,16 @@
+Condições e Repetições no PowerShell 
+
+if e else 
+
+$idade = Read-Host "Qual a idade?" 
+if ($idade -ge "18" ){
+	echo "PODE DIRIGIR"
+} else{
+	echo "NÃO PODE DIRIGIR" 
+} 
+
+sequências 
+1..10 -> apenas, é mais simples do que o bash. 
+
+> Podemos utilizar o for, mas o mais fácil é o foreach
+

@@ -1,0 +1,27 @@
+PORTSCAN EM BASH 
+
+O usuário deve informar a rede e o script deve retornar os hosts que possuem a porta 80 aberta.
+
+Podemos utilizar o comando hping3 para descobrirmos quais portas estão abertas em uma rede. 
+
+Sintaxe:hping3 -S(Pacote syn)  -p 80 -c 1(único pacote) 172.20.10.14
+flag TCP: 
+SA -> Está aberta
+RA -> Não está aberta
+
+HPING 192.168.0.1 (wlp2s0 192.168.0.1): S set, 40 headers + 0 data bytes
+len=46 ip=192.168.0.1 ttl=64 DF id=0 sport=80 flags=SA seq=0 win=14600 rtt=7.7 ms
+
+queríamos apenas a resposta sport=80 flags=SA 
+
+Files descriptors - Linux 
+
+1>STDOUT -> direcionamos saída
+
+2>STDERROR -> direcionamos erro 
+
+0>STDIN
+
+sudo ./scanport.sh 192.168.0 1 > log 
+sudo ./scanport.sh 192.168.0 2 > /dev/null 
+

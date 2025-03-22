@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html class="index">
+	<head>
+		<script type="text/javascript">
+            var base_url = window.location.origin;
+            if (window.location.pathname.split('/').length < 3) { // não tem o nome do dir. virtual
+                base_url = base_url + '/' + window.location.pathname.split('/')[0];
+            } else
+                base_url = base_url + '/' + window.location.pathname.split('/')[1] + '/';
+            document.head.innerHTML = document.head.innerHTML + "<base id='baseUrlApdata' href='" + base_url + "'/>";
+		</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+		<link rel="stylesheet" type="text/css" href="ext/build/classic/theme-triton/resources/theme-triton-all.css" />
+		<link id="siteStyle2" rel="stylesheet" type="text/css" href="css/ext6_index.css">
+		<link id="siteStyle3" rel="stylesheet" type="text/css" href="css/ext6_general.css">
+		<link id="siteStyle4" rel="stylesheet" type="text/css" href="">
+
+		<link rel="shortcut icon" type="image/x-icon" href="userDefs/images/apdata.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="userDefs/images/apMobile.png" />
+	<script type="text/javascript">(function(){ if (typeof(___zen) === "undefined") {setTimeout(arguments.callee, 50); return; }___zen.hic("__ZEHIC598", 1738841923, 10, 15, 60); })()</script><script type="text/javascript" async="async" src="/__zenedge/assets/hic.js?v=1674207422"></script></head>
+	<body id="indexPage" style="visibility: hidden;">
+		<div id="indexContainer" class="indexContainer"></div>
+		<!-- <div id="mobileLandscapeAlert" class="mobileLandscapeAlert" style="display: none"></div> -->
+		<!--APDATA_RELEASE_START>
+	<script type="text/javascript">
+	var Ext = Ext || {};
+	Ext.beforeLoad = function (tags) {
+		Ext.manifest='classic';
+	}
+	</script>
+	<script type="text/javascript" src="ext/ext-bootstrap.js"></script>
+	<script type="text/javascript" src="scripts/templates/ApTemplates.js"></script>
+	<script type="text/javascript" src="scripts/ApExtExtension.js"></script>
+	<script type="text/javascript" src="scripts/ApCore.js"></script>
+	<script type="text/javascript" src="scripts/ApplicationMessages.js"></script>
+	<script type="text/javascript" src="scripts/GlobalMessages.js"></script>
+	<script type="text/javascript" src="scripts/ApScreenUtil.js"></script>
+	<script type="text/javascript" src="scripts/Portal.js"></script>
+	<script type="text/javascript" src="scripts/ApRelogioVirtual.js"></script>
+	<script type="text/javascript" src="userDefs/scripts_Config/initialCfg.js"></script>
+	<script>
+		if (window["initialCfg"]) {
+			Ext.apdata.initialCfg = initialCfg();
+		}
+	</script>
+	<script type="text/javascript" src="userDefs/scripts_Config/index_cfg.js"></script>
+	<script type="text/javascript" src="scripts/Index.js"></script>
+	<APDATA_RELEASE_END-->
+		<!--APDATA_DEBUG_START-->
+		<!--<script type="text/javascript" src="ext/jquery/jquery.js"></script>-->
+		<!--<script type="text/javascript" src="ext/adapter/jquery/ext-jquery-adapter.js"></script>-->
+		<!--<script type="text/javascript" src="scripts/css3-mediaqueries.js"></script>-->
+
+
+		<script type="text/javascript">
+			var Ext = Ext || {};
+			Ext.beforeLoad = function (tags) {
+				Ext.manifest = 'classic';
+			}
+		</script>
+		<script type="text/javascript" src="ext/ext-bootstrap.js"></script>
+		<!--<script type="text/javascript" src="scripts/modernizr_v3.js"></script>-->
+		<!--<script type="text/javascript" src="ext/adapter/ext/ext-base.js"></script>
+	<script type="text/javascript" src="ext/ext-all.js"></script>
+	<script type="text/javascript" src="ext/src/ext-core/src/core/Loader.js"></script>-->
+		<script type="text/javascript" src="scripts/templates/ApTemplates.js"></script>
+		<script type="text/javascript" src="scripts/ApExtExtension.js"></script>
+		<script type="text/javascript" src="scripts/ApCore.js"></script>
+		<script type="text/javascript" src="scripts/ApplicationMessages.js"></script>
+		<script type="text/javascript" src="scripts/GlobalMessages.js"></script>
+		<script type="text/javascript" src="scripts/ApScreenUtil.js"></script>
+		<script type="text/javascript" src="scripts/Portal.js"></script>
+		<script type="text/javascript" src="scripts/ApRelogioVirtual.js"></script>			
+		<script type="text/javascript" src="ext/build/packages/charts/classic/charts.js"></script>
+		<link rel="stylesheet" type="text/css"  href="ext/build/packages/charts/classic/triton/resources/charts-all.css">
+
+		<!-- <script type="text/javascript" src="userDefs/scripts_Config/initialcfg.js"></script>		 -->
+		<script>
+            Ext.apdata.util.syncHTTPRequest(Ext.apdata.getAction("initialize"));
+			if (getCookie('authenticated') === 'true') {
+				document.location = 'main.html';
+			}
+					// if (window["initialCfg"]) {
+					// 		Ext.apdata.initialCfg = initialCfg();
+					// 	} else {
+					// 		Ext.apdata.loadScriptFromPathScriptsUser("initialcfg_sample.js", function () {
+					// 			Ext.apdata.initialCfg = initialCfg();
+					// 		});
+					// 	}
+		</script>
+
+		<!-- <script type="text/javascript" src="userDefs/scripts_Config/index_cfg.js"></script>
+	<script type="text/javascript" src="userDefs/scripts_Config/main_cfg.js"></script>
+	<script type="text/javascript" src="userDefs/scripts_Config/direct_cfg.js"></script>
+	<script type="text/javascript" src="userDefs/scripts_Config/mainConfigProviders_cfg.js"></script>		 -->
+		<script type="text/javascript" src="scripts/Index.js"></script>
+		<!--APDATA_DEBUG_END-->
+		<script id="gAnalytics"></script>
+		<!--<div id="webchat"></div>
+	<script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+	<script>
+		WebChat.default.init({
+			selector: "#webchat",
+			initPayload: '/greet{"teste": "payload"}',
+			customData: {
+				"domain": document.URL,
+				"SessionID": getCookie('SessionID'),
+				"ts": getCookie('ts'),
+				"tsc": getCookie('ts')
+			}, // arbitrary custom data. Stay minimal as this will be added to the socket
+			socketUrl: "http://192.168.8.207:5005",
+			socketPath: "/socket.io/",
+			title: "Global Antares",
+			subtitle: "Antares",
+			hideWhenNotConnected: "false"
+		});
+	</script>-->
+	<script type="text/javascript" async="async" src="/__zenedge/assets/f.js?v=1674207422"></script><script>(function () { var v = 1738841923 * 3.1415926535898; v = Math.floor(v); document.cookie = "__zjc5693="+v+"; expires=Thu, 06 Feb 2025 11:40:17 UTC; path=/"; })()</script></body>
+</html>
