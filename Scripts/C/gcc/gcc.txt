@@ -1,0 +1,23 @@
+Como funciona o processo de compilação em C? 
+
+O compilador converte o programa em C em um executável
+
+-> 
+
+
+1. Pré-Processamento - Primeiro passo - Remove comentários, inclui os arquivos necessários (.I) 
+-> Prepara o código para o processo de compilação
+
+2. Compilação - Próximo passo o .i é compilado e gerado por um .s que contém instruções em Assembly(.S - INSTRUÇÕES ASSEMBLY) 
+
+3. Assembly - Aqui o .s é usado para gerar um .o contendo apenas o código em linguagem de máquina.(.O -> LINGUAGEM DE MÁQUINA)
+
+4. Linking - Fase final onde é feito a ligação do objeto com as bibliotecas para gerar o executável final.
+
+ENTENDENDO NA PRÁTICA
+
+gcc -save-temps ola.c -o ola
+-> gera todos os arquivos utilizados no processo de compilação
+
+
+
