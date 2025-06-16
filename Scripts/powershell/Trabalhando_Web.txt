@@ -1,8 +1,0 @@
-invoke-WebRequest -> Comando que permite realizar requisições Web 
-Invoke-WebRequest -OutFile bkp.txt -> Salva um arquivo
-Invoke-WebRequest -Method <head, options, post> -> Pode trazer diferentes métodos
-Invoke-WebRequest (Invoke-WebRequest <uri>) <- Podemos colocar o retorno em objeto
---> (...).statuscode -> 200  (...).content -> html 
-(...).links -> filtro de saída (ex: href -> .links.href) -> parsing html
-(...).headers.server
-
